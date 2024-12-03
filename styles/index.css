@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nova Square", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+      
+    
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+
+}
+
+
+header {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 100%;
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    z-index: 1; 
+}
+
+.logotipo {
+    position: absolute; 
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    left: -2rem;
+    top:-6.2rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        position: relative; 
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logotipo {
+        position: relative; 
+        width: 10rem;
+        height: 10rem;
+        left: 0; 
+        top: 0;  
+        margin: 0 auto; 
+    }
+
+    .nav-list {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .nav-link {
+        padding: 5px; 
+    }
+}
+
+
+button, .rounded-button {
+    background-color: rgb(33, 216, 33);
+    padding: 10px;
+    border-radius: 25px !important; 
+    outline: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 10rem;
+}
+
+button:hover, .rounded-button:hover {
+    background-color: #095809;
+    color: white;
+}
+
+.imagem1 {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.imagem1 img {
+    width: 100%;
+    height: auto;
+}
+
+.texto {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.conteiner-principal {
+    position: relative;
+    width: 100%;
+    height: 200vh; 
+}
+
+.div2, .div3 {
+    width: 100%;
+    height: 100vh;
+}
+
+.div2 {
+    background-color: #026602;
+}
+
+.div2 .texto1 {
+    margin: auto;
+    padding: 50px;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    padding-top: 10rem;
+
+}
+
+.div2 .seg_btn {
+    margin-top: 5rem; 
+}
+
+.div3 {
+    background-color: black; 
+    color: white; 
+    padding: 20px;
+}
+
+.div3 .texto2 {
+    text-align: center;
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.div3 section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: #026602; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+footer .contato {
+    text-align: left;
+    flex: 1;
+    
+    
+}
+
+footer .direitos {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px; 
+  }
+  .carousel-image {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px; 
+  }
+  .carousel-text {
+    text-align: left;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: black; 
+}
+
+
